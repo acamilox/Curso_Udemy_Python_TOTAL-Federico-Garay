@@ -49,7 +49,7 @@ def validar_opcion(min_val: int, max_val: int) -> int | None:
         El número entero validado.
     """
     while True:
-        opcion_str = input(f"Elige una opción (del {min_val} al {max_val}): ")
+        opcion_str = input(f"\nElige una opción (del {min_val} al {max_val}): ")
         if not opcion_str.isdigit():
             print("Error: Debes ingresar un número.")
             continue
@@ -124,7 +124,7 @@ def elegir_receta(ruta_categoria: Path) -> Path | None:
 
 def mostrar_bienvenida(ruta: Path):
     """Muestra el mensaje de bienvenida, la ruta y el conteo de recetas."""
-    print("¡Bienvenido al Administrador de Recetas! 🍳")
+    print("*****¡Bienvenido al Administrador de Recetas!***** 🍳")
     print("============================================")
     print(f"Las recetas se encuentran en: {ruta}")
     conteo = contar_recetas(ruta)
@@ -134,7 +134,7 @@ def mostrar_bienvenida(ruta: Path):
 
 def mostrar_menu():
     """Imprime las opciones del menú principal."""
-    print("\nMenú Principal:")
+    print("\nMenú Principal\n")
     print("[1] - Leer receta")
     print("[2] - Crear receta nueva")
     print("[3] - Crear categoría nueva")
