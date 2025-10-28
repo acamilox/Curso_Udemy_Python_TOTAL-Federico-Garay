@@ -35,5 +35,3 @@ samurai = Samurai()
 personaje_defender(mago)
 personaje_defender(arquero)
 personaje_defender(samurai)
-
-if __name__ == '__main__':
