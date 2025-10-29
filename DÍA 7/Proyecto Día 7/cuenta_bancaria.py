@@ -43,8 +43,8 @@ Balance: ${self.balance} '''
 # CREACIÓN DEL CLIENTE
 def crear_cliente():
     # Pedimos los datos
-    nombres = input('Ingrese su(s) nombre(s): ')
-    apellidos = input('Ingrese su(s) apellido(s): ')
+    nombres = input('Ingrese su(s) nombre(s): ').upper()
+    apellidos = input('Ingrese su(s) apellido(s): ').upper()
     numero_cuenta = input('Ingrese su número de cuenta: ')
     balance = float(input('Ingrese su balance inicial: $'))
     print('')
@@ -54,7 +54,7 @@ def crear_cliente():
     return cliente
 
 def inicio():
-    print("--- Bienvenido al sistema bancario ---")
+    print("--- BIENVENIDO AL SISTEMA BANCARIO ---")
     mi_cliente = crear_cliente()  # Creamos el cliente
 
     # Imprimimos los datos usando __str__
