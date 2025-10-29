@@ -5,7 +5,6 @@ class Persona:
         self.nombres = nombres
         self.apellidos = apellidos
 
-
 class Cliente(Persona):
     def __init__(self, nombres, apellidos, numero_cuenta, balance):
         super().__init__(nombres, apellidos)
@@ -13,15 +12,13 @@ class Cliente(Persona):
         self.balance = balance
 
     def __str__(self):
-            return f"""
-------------------------------------
-******Bienvenido al Cajero Bancolombia*****
-------------------------------------
+            return f'''-----------------------------------------------
+******  Bienvenido al Cajero Bancolombia  *****
+-----------------------------------------------
 Datos del Cliente
 Nombres y Apellidos: {self.nombres} {self.apellidos}
 Número de Cuenta: {self.numero_cuenta}
-Balance: ${self.balance}
-                    """
+Balance: ${self.balance} '''
 
     # Metodo Depositar
     def depositar(self):
@@ -50,6 +47,7 @@ def crear_cliente():
     apellidos = input('Ingrese su(s) apellido(s): ')
     numero_cuenta = input('Ingrese su número de cuenta: ')
     balance = float(input('Ingrese su balance inicial: $'))
+    print('')
 
     # Creamos y retornamos el objeto Cliente
     cliente = Cliente(nombres, apellidos, numero_cuenta, balance)
@@ -68,7 +66,9 @@ def inicio():
         print('1. Depositar')
         print('2. Retirar')
         print('3. Salir')
+        print('')
         opcion = input('Seleccione una opción: ')
+        print('')
 
         if opcion == '1':
             mi_cliente.depositar()  # Llamamos al método del objeto
