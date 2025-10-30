@@ -43,5 +43,5 @@ def cociente(num1, num2):
     except ZeroDivisionError:
         print('El segundo argumento no debe ser cero')
 
-if  __name__=='__main__':
-    cociente(5,2)
+
+cociente(5,2)

@@ -53,5 +53,5 @@ def abrir_archivo(nombre_archivo):
         # 4. Se ejecuta SIEMPRE, al final de todo
         print('Finalizando ejecución')
 
-if __name__ == '__main__':
-    abrir_archivo('nombre_archivo')
+
+abrir_archivo('nombre_archivo')

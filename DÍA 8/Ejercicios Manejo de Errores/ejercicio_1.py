@@ -33,5 +33,5 @@ def suma(num1, num2):
     except:
         print('Error inesperado')
 
-if __name__=='__main__':
-    suma(2,3)
+
+suma(2,3)
